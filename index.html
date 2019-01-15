@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Flat Responsive Bootstrap Website Tutorial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="scrolling.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+  <script type="text/javascript">
+     $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+        $(this).collapse('hide');
+    }
+    });
+  </script>
+</head>
+  <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Media</a>
+        </div><!--end of nav bar heade-->
+        
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#clients">Client</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div><!-- end of nav bar collapse-->
+    </div><!-- end of containter-->
+    </nav>
+     
+<!-- header-->
+      <div id="header" class="header">
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 wow bounceInLeft" data-wow-delay="0.4s">
+                <h1>Responsive Web Design</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in.</p>
+                    <button class="btn btn-lg btn-primary">Buy Now</button>
+                    <button class="btn btn-lg btn-success">View Detail</button>
+                </div>
+                 <div class="col-lg-6 col-md-6 wow bounceInRight" data-wow-delay="0.4s">
+                    <img src="images/desktop.png" alt="">
+                </div>
+              </div>
+          </div>
+      </div>
+      
+    <!-- Services Section--->
+<div id="services">
+    <div class="container">
+        <h2>Services</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.8s" id="sm1">
+                <i class="fas fa-desktop" aria-hidden="true" id="fa1"></i>
+                <h4>Web Design</h4>
+                <p>Lorem Ipsum passages, and more recently with desltop publishing software</p>
+            </div>
+            <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.4s">
+                <i class="fas fa-phone" aria-hidden="true" id="fa1"></i>
+                <h4>Mobile Apps</h4>
+                <p>Lorem Ipsum passages, and more recently with desltop publishing software</p>
+            </div>
+            <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay=".8s">
+                    <i class="fas fa-database" aria-hidden="true" id="fa1"></i>
+                   <h4>Database</h4>
+                <p>Lorem Ipsum passages, and more recently with desltop publishing software</p>
+            </div>
+            <div class="col-lg-3 col-md-3 wow fadeInLeft"data-wow-delay="0.4s">
+                    <i class="fas fa-university" aria-hidden="true" id="fa1"></i>
+                   <h4>Consulting</h4>
+                <p>Lorem Ipsum passages, and more recently with desltop publishing software</p>
+            </div>
+        </div>
+    </div>      
+</div>
+      
+<!-- Pricing Section-->
+<div id="pricing" class="pricing">
+    <div class="container">
+        <div class="row">
+            <h2 id="price">Pricing</h2>
+            <p>Lorem Ipsum passages, and more recently with desltop publishing software</p>
+                <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.8s">
+                    <div class="packages">
+                        <h4>Bronze</h4>
+                        <h1>$9.99</h1>
+                        <b>Monthly</b>
+                        <p>Lorem Ipsum passages, and more recently with desltop</p>
+                        <hr>
+                        <li>100 Users</li>
+                        <li>SSL Ceritificate</li>
+                        <li>Online Support</li>
+                        <li>300GB Diskspace</li>
+                        <li>800 Email Address</li>
+                        <li>MySQL Database</li>
+                        <button class="btn btn-danger">Get Started</button>
+                    </div>
+                </div>
+              <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.4s">
+                    <div class="packages">
+                        <h4>Silver</h4>
+                        <h1>$19.99</h1>
+                        <b>Monthly</b>
+                        <p>Lorem Ipsum passages, and more recently with desltop</p>
+                        <hr>
+                        <li>100 Users</li>
+                        <li>SSL Ceritificate</li>
+                        <li>Online Support</li>
+                        <li>300GB Diskspace</li>
+                        <li>800 Email Address</li>
+                        <li>MySQL Database</li>
+                        <button class="btn btn-danger">Get Started</button>
+                    </div>
+                </div>
+              <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay=".8s">
+                    <div class="packages">
+                        <h4>Gold</h4>
+                        <h1>$29.99</h1>
+                        <b>Monthly</b>
+                        <p>Lorem Ipsum passages, and more recently with desltop</p>
+                        <hr>
+                        <li>100 Users</li>
+                        <li>SSL Ceritificate</li>
+                        <li>Online Support</li>
+                        <li>300GB Diskspace</li>
+                        <li>800 Email Address</li>
+                        <li>MySQL Database</li>
+                        <button class="btn btn-danger">Get Started</button>
+                    </div>
+                </div>
+              <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay=".4s">
+                    <div class="packages">
+                        <h4>Premium</h4>
+                        <h1>$39.99</h1>
+                        <b>Monthly</b>
+                        <p>Lorem Ipsum passages, and more recently with desltop</p>
+                        <hr>
+                        <li>100 Users</li>
+                        <li>SSL Ceritificate</li>
+                        <li>Online Support</li>
+                        <li>300GB Diskspace</li>
+                        <li>800 Email Address</li>
+                        <li>MySQL Database</li>
+                        <button class="btn btn-danger">Get Started</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+      
+<!--Meet the people-->
+<div id="team" class="team">
+    <div class="container">
+        <div class="row">
+            <h2>Meet Our Team</h2>
+            <p>Lorem Ipsum passages, and more recently with desltop publishing software</p>
+                <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.8s" id="pad1">
+                    <img src="images/ant.jpg" alt="" class="img-circle">
+                    <h4>Jon Doe</h4>
+                    <b>CEO and Founder</b>
+                    <p>Lorem Ipsum passages, and more recently with desltop publishing software</p>
+                    <a href="#"><i class="fab fa-facebook-f" id="fab1"></i></a>
+                    <a href="#"><i class="fab fa-twitter" id="fab1"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in" id="fab1"></i></a>
+                    <a href="#"><i class="fab fa-pinterest" id="fab1"></i></a>
+                </div>
+                 <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.4s" id="pad1">
+                    <img src="images/Brown.png" alt="" class="img-circle">
+                    <h4>Jon Doe</h4>
+                    <b>CEO and Founder</b>
+                    <p>Lorem Ipsum passages, and more recently with desltop publishing software</p>
+                    <a href="#"><i class="fab fa-facebook-f" id="fab1"></i></a>
+                    <a href="#"><i class="fab fa-twitter" id="fab1"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in" id="fab1"></i></a>
+                    <a href="#"><i class="fab fa-pinterest" id="fab1"></i></a>
+                </div>
+                <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay=".8s" id="pad1">
+                    <img src="images/Argie.png" alt="" class="img-circle">
+                    <h4>Jon Doe</h4>
+                    <b>CEO and Founder</b>
+                    <p>Lorem Ipsum passages, and more recently with desltop publishing software</p>
+                    <a href="#"><i class="fab fa-facebook-f" id="fab1"></i></a>
+                    <a href="#"><i class="fab fa-twitter" id="fab1"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in" id="fab1"></i></a>
+                    <a href="#"><i class="fab fa-pinterest" id="fab1"></i></a>
+                </div>
+                <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay=".4s" id="pad1">
+                    <img src="images/Donya_Booth.png" alt="" class="img-circle">
+                    <h4>Jon Doe</h4>
+                    <b>CEO and Founder</b>
+                    <p>Lorem Ipsum passages, and more recently with desltop publishing software</p>
+                    <a href="#"><i class="fab fa-facebook-f" id="fab1"></i></a>
+                    <a href="#"><i class="fab fa-twitter" id="fab1"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in" id="fab1"></i></a>
+                    <a href="#"><i class="fab fa-pinterest" id="fab1"></i></a>
+                </div>
+        </div>
+    </div>    
+</div>
+
+<!-- Client Section-->
+<div id="clients" class="clients">
+    <div class="container">
+        <div class="row">
+            <h2>Trusted by</h2>
+            <p>Lorem Ipsum passages, and more recently with desltop publishing software</p>
+            <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.8s">
+                <li><img src="images/company1.png" alt=""></li>
+            </div>
+            <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.4s">
+                <li><img src="images/company1.jpg" alt=""></li>
+            </div>
+            <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay=".8s">
+                <li><img src="images/company2.png" alt=""></li>
+            </div>
+            <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay=".4s">
+                <li><img src="images/company5.png" alt=""></li>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Form-->
+<div id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <h2>Contact Us</h2>
+            <p>Lorem Ipsum passages, and more recently with desltop publishing software</p>
+            <div class="col-lg-6 col-md-6">
+                <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
+                    <span class="input-group-addon" id="sizing-addon1"><i class="fas fa-user"></i></span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="FullName">
+                </div>
+                <div class="input-group input-group-lg  wow fadeInUp" data-wow-delay="1.2s">
+                    <span class="input-group-addon" id="sizing-addon1"><i class="fas fa-envelope"></i></span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Email Address">
+                </div>
+                <div class="input-group input-group-lg  wow fadeInUp" data-wow-delay="1.6s">
+                    <span class="input-group-addon" id="sizing-addon1"><i class="fas fa-phone"></i></span>
+                        <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Phone Number">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="input-group  wow fadeInUp" data-wow-delay="2s">
+                    <textarea name="" id="" cols="88" rows="6" class="form-control"></textarea>
+                </div>
+                <button class="btn btn-lg   wow fadeInUp" data-wow-delay="2.4s">Submit Your Message</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer Section-->
+<div class="footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+               <h4>Contact Us</h4>
+                <p><i class="fas fa-home"></i> 111 Main Street Washington DC, 22222</p>
+                <p><i class="fas fa-envelope"></i> info@media.com</p>
+                <p><i class="fas fa-phone"></i> +1 222-222-2222</p>
+                <p><i class="far fa-globe"></i> www.media.com</p>
+            </div>
+             <div class="col-lg-4 col-md-4">
+                <h4>About</h4>
+                <p><i class="far fa-square"></i> About Us</p>
+                <p><i class="fas fa-user-secret"></i> Privacy</p>
+                <p><i class="fas fa-asterisk"></i> Terms & Conditions</p>
+            </div>
+             <div class="col-lg-4 col-md-4">
+                <h4>Stay in Touch</h4>
+                <i class="social fab fa-facebook-f"></i>
+                 <i class="social fab fa-twitter"></i>
+                 <i class="social fab fa-linkedin-in"></i>
+                 <i class="social fab fa-pinterest-square"></i>
+                 <i class="social fab fa-youtube"></i>
+                 <i class="social fab fa-github"></i><br/>
+                 <input type="email" placeholder="Subscribe for Updates"><button class="btn .btn-danger" id="footer1">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</div>
+      
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+  </body>
+</html>
